@@ -132,6 +132,9 @@ section { padding-block: 56px; border-top: 2px solid var(--ink); }
 .play strong { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; }
 .play span.desc { color: var(--muted); font-size: .95rem; }
 .play .go { margin-top: auto; font-weight: 600; }
+.play a.featured { grid-column: 1 / -1; background: var(--accent); color: var(--accent-ink); }
+.play a.featured .host, .play a.featured .desc { color: var(--accent-ink); }
+.play a.featured strong { font-size: 1.7rem; }
 
 /* Skills + education */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -276,7 +279,7 @@ section { padding-block: 56px; border-top: 2px solid var(--ink); }
           <li>The movement and weapon code is written with Claude Code, while I direct the systems, playtest and tune how it feels.</li>
           <li>Fast first-person movement where every weapon also enhances how you move, each in its own unique way.</li>
         </ul>
-        <div class="foot hud"><span class="chip">Work in progress</span></div>
+        <div class="foot hud"><span class="chip">Alpha out now</span><a href="https://confoosion.itch.io/momechs" target="_blank" rel="noopener">Play the alpha on itch.io →</a></div>
       </article>
 
       <article class="project">
@@ -295,8 +298,12 @@ section { padding-block: 56px; border-top: 2px solid var(--ink); }
 
 <section id="play">
   <div class="wrap">
-    <div class="sec-head"><h2>Play it</h2><span class="hud">6 games · browser &amp; Steam</span></div>
+    <div class="sec-head"><h2>Play it</h2><span class="hud">7 games · browser &amp; Steam</span></div>
     <div class="play">
+      <a class="featured" href="https://confoosion.itch.io/momechs" target="_blank" rel="noopener">
+        <span class="hud host">itch.io · New alpha</span><strong>MoMechs</strong>
+        <span class="desc">A 3D parkour movement shooter where every weapon changes how you move. Try the alpha build.</span><span class="go">Play the alpha →</span>
+      </a>
       <a href="https://store.steampowered.com/app/3674920/Markuss_Miasma/" target="_blank" rel="noopener">
         <span class="hud host">Steam</span><strong>Markus’s Miasma</strong>
         <span class="desc">A horror puzzle game.</span><span class="go">Open →</span>
